@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> hello world</h1>
+
+        <form action='/articles/' method="GET">
+            <input type="text" name="q"/>
+            <input type="submit" />
+        </form>
+        <!--if you choose to extend from this file, you will inherit everything except for the block content-->
+        {% block content %}
+        <h3>this will be replaced</h3>
+        {% endblock content %}
+
+    </body>
+
+
+</html>
